@@ -42,6 +42,7 @@ stopbtn.addEventListener("click", function(){
 
 // リセットボタンクリック時の動作
 resetbtn.addEventListener("click", function(){
+  clearInterval(interval);
   time.innerHTML = "0:0:0:0";
   hour = minute = second = m_second = 0;
   startbtn.disabled = false;
